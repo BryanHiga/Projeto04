@@ -1,9 +1,3 @@
-<%-- 
-    Document   : home
-    Created on : 10/10/2017, 15:42:35
-    Author     : a
---%>
-
 <%@page import="br.com.fatecpg.quiz.Questão"%>
 <%@page import="br.com.fatecpg.quiz.Quiz"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
@@ -31,16 +25,10 @@
             }
 
             Quiz.contagem++;
-            Quiz.soma += (100.00 * ((double) acertos / 10.0));
+            Quiz.soma +=(100.00*((double)acertos/10.0));
 
-        }
-
-        
-        
-        
+        }     
     %>
-
-
     <form>
         <%for (Questão q : Quiz.getPergunta()) {%> <h4><%= q.getResponda()%></h4>
         <input type="radio" name="<%= q.getResponda()%>" value="<%= q.getAlternativa()[0]%>" />

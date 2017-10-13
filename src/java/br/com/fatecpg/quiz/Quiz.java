@@ -22,14 +22,14 @@ public class Quiz {
     }
 
     public static double Validacao(String[] responde) {
-        int corrects = 0;
+        int correto = 0;
         for (int i = 0; i < pergunta.size(); i++) {
             Questão q = pergunta.get(i);
             if (q.getResponda().equals(responde[i])) {
-                corrects++;
+                correto++;
             }
         }
-        double nivel = 100 * ((double) corrects / (double) pergunta.size());
+        double nivel = 100 * ((double) correto / (double) pergunta.size());
         contagem++;
         soma += nivel;
         nivelF = nivel;
