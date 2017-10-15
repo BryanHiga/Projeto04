@@ -1,0 +1,36 @@
+body {
+    background-image: url("../img/teste.jpg");
+    background-repeat: repeat;
+}
+
+.quiz-desc, .estatistica, .quiz-container {
+    padding: 20px;
+    border: 1px solid #c2c2c2;
+    background-color: white;
+    margin-bottom: 40px;
+}
+
+.quiz-container {
+    margin-top: 100px;
+}
+
+#bt_enviar {
+    float: right;
+}
+
+.titulo-quiz {
+    display: inline;
+}
+#link_abandonar {
+    margin-top: -40px;
+    float: right;
+    cursor: pointer;
+}
+.botoes {
+    width: 100%;
+    display: inline-block;
+    float: left;
+}
+.botoes-navagacao {
+    margin-top: 25px;
+}
